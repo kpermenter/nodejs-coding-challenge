@@ -25,4 +25,11 @@ router.delete('/delete/user/:email', (req, res) => {
   deleteUser(req, res);
 })
 
+// 404 for invalid endpoints
+router.use('/*', (req, res) => {
+  res.status(404).json({
+    message: 'invalid route'
+  })
+})
+
 module.exports = router;
