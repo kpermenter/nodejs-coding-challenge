@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "data": "node ./bin/generate-data.js",
-    "start": "node ./src/index.js"
+    "start": "node ./src/server.js"
   },
   "author": "Cody Mercer <cmercer@mrpfd.com>",
   "license": "UNLICENSED",
